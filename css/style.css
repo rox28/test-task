@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------*/
+/*-- CSS Document --*/
+/*--------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*--- Custom Reset Styles ---*/
+/*-----------------------------------------------------------------*/
+html, body { margin: 0; padding: 0; outline: none; min-width: 320px; } 
+body { font: 14px/1.2 Arial, sans-serif; color: #555; background: #fff; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: normal; }  
+p, img { margin: 0; padding: 0; }
+a { text-decoration: none; }  
+a { color: #555; }
+a, a:focus, a:visited { border: none; outline: none !important; text-decoration: none; } 
+a:hover { color: #999; text-decoration: none; outline: none !important; }
+a img { border: 0; display: block; outline: none; }
+button, button:active, button:focus, input[type="submit"] { outline: none !important; }
+form { margin: 0; padding: 0; }
+input[type="text"], input[type="email"], input[type="password"], select { height: 40px; width: 100%; padding: 5px 10px; font: 14px/1.2 Arial, sans-serif; color: #555; border-radius: 5px !important; outline: none !important; border: 1px solid #ccc; -webkit-appearance: none; -webkit-box-shadow: none; box-shadow: none !important; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"] { outline: none; box-shadow: none !important; }
+input::-webkit-input-placeholder { color: #999; }
+input:-ms-input-placeholder { color: #999; }
+textarea::-webkit-input-placeholder { color: #999; }
+:-moz-placeholder { opacity: 1; color: #999; }
+::-moz-placeholder { opacity: 1; color: #999; }
+
+#header, #footer { display: block; margin: 0; padding: 0; outline: none; }
+/*-----------------------------------------------------------------*/
+/*--- Lists Styles Global Reset ---*/
+/*-----------------------------------------------------------------*/
+.companies-list, .partners-list { list-style: none; margin: 0; padding: 0; }
+/*-----------------------------------------------------------------*/
+/*--- Base Styles ---*/
+/*-----------------------------------------------------------------*/
+/*--- Base Button ------------------------------------------*/
+.btn-base { display: inline-block; overflow: hidden; outline: none !important; border: 1px solid #ccc !important; border-radius: 5px; padding: 15px; font-size: 14px; color: #555; background: #eee; cursor: pointer; }
+.btn-base:hover { background: #fff; color: #555; }
+/*-----------------------------------------------------------------*/
+/*--- Content Styles ---*/
+/*-----------------------------------------------------------------*/
+#main { width: 100%; position: relative; min-width: 320px; padding-top: 50px; }
+.box-container { border: 1px solid #ccc; margin-bottom: 20px; height: 250px; }
+.box-container h3 { font-size: 16px; background: #eee; padding: 10px; }
+.box-container .inner { padding: 10px; }
+.total-amount { border-radius: 50%; margin: 25px auto 0; width: 140px; height: 140px; padding-top: 55px; border: 1px solid #000; font-size: 25px; text-align: center; }
+.companies-list-outer { overflow: hidden; }
+.companies-list-outer .inner { max-height: 200px; overflow-x: hidden; overflow-y: auto; }
+.companies-list li a { border: 1px solid #000; border-width: 0 1px 1px; display: block; padding: 10px; }
+.companies-list li:first-child a { border-top: 1px solid #000; }
+.filter-container { padding-bottom: 15px; }
+.list-wrapper { max-width: 1190px; overflow-x: auto; overflow-y: hidden; }
+.partners-list { display: table; }
+.partners-list li { display: table-cell; vertical-align: middle; height: 137px;border: 1px solid #000; }
+.partners-list span { display: block; text-align: center; padding-top: 10px; width: 100px; }
+.news-outer h4 { background: transparent; font-size: 15px; text-decoration: underline; font-weight: bold; padding-bottom: 7px; }
+.news-outer .details { padding-top: 10px; }
+.news-outer .details p span { font-weight: bold; padding-right: 5px; }
+.img-container { height: 150px; overflow: hidden; }
+.img-container img { width: 100%; height: auto; }
+#chartdiv a { display: none !important; }
+/*-----------------------------------------------------------------*/
+/*--- Form ---*/
+/*-----------------------------------------------------------------*/
+.form { text-align: center; background: #fff; width: 500px; margin: 0 auto; border: 1px solid #ccc; }
+.form-inner { padding: 40px 60px; }
+.form .form-group { margin-bottom: 10px; }
+.form .btn-base { margin-top: 40px; }
+.form h2 { background: #eee; padding: 10px; font-size: 23px; }
+.form .error { display: none; color: red; text-align: left; padding: 3px; font-size: 12px; }
+.form label { vertical-align: top; }
+.form .label-outer { padding-top: 10px; text-align: left; }
+/*-----------------------------------------------------------------*/                               
+/*--- Media Queries Styles ---*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*---------- Styles for desktop 0 - 1200px -----------*/
+/*-----------------------------------------------------------------*/
+@media only screen and (min-width: 0) and (max-width: 1200px) {
+    body { font-size: 13px; }
+}
+/*-----------------------------------------------------------------*/
+/*---------- Styles for desktop 0 - 1023px -----------*/
+/*-----------------------------------------------------------------*/
+@media only screen and (min-width: 0) and (max-width: 1023px) {
+    .col-sm-6 { width: 100%; }
+    #main { padding-top: 20px; }
+    .news-outer { height: auto; }
+    .img-container { margin-bottom: 20px; }
+}
+/*-----------------------------------------------------------------*/
+/*---------- Styles for mobile 0 - 767px --------*/
+/*-----------------------------------------------------------------*/
+@media only screen and (min-width: 0) and (max-width: 768px) {
+    body { font-size: 12px; }
+    .form { width: 90%; margin: 15px auto; }
+    .form h2 { font-size: 20px; }
+    .form .btn-base { margin-top: 10px; }
+    .form-inner { padding: 20px; }
+    input[type="text"], input[type="email"], input[type="password"], select { height: 30px; }
+}
